@@ -25,73 +25,54 @@ Genesis F7 is the first custom-built flight controller powered by the STM32F7 se
 
 
 
-**MICROCONTROLLER**
-- STM32F7 series
-- Primary clock: 25 MHz crystal connected on PH0 / PH1
-- SWD available for debugging and firmware flashing
-
-
-
-
-
-**IMU**
-- ICM-42688-P
-- INT pin routed to MCU for gyro interrupt signaling
-
-
-
-**MOTORS CONNECTIONS**
-Each pin outputs a PWM signal to control ESCs.
-- PB4 → Motor 1
-- PB5 → Motor 2
-- PB6 → Motor 3
-- PB7 → Motor 4
-
-
-
-
-
-
-
-**POWER CONNECTION**
-- 5V → from ESC BEC
-- AMS1117 → 3.3V rail
-- VBAT → PA0
-
-
-
-
-
-**USB-C INTERFACE**
-- Connected to PA11 & PA12
-
-
-
-**PROGRAMING / DEBUGGING**
-
-Standard SWD header
-- SWCLK
-- SWDIO
-- NRST
-- 3V3
-- GND
-
-
-**CLOCK SYSTEM**
-
-- 25 MHz crystal oscillator.
-
-**USB-C**
-
-- Connected to PA11/PA12
-
-
-
-**PROGRAMMING**
-
-SWD header:
-- SWCLK
-- SWDIO
-- NRST
-- 3V3
-- GND
+> **MICROCONTROLLER**
+> - STM32F7 series
+> - 25 MHz crystal connected on PH0 / PH1
+> - SWD for firmware flashing
+> 
+> **IMU**
+> - ICM-42688-P
+> - INT pin routed to MCU
+> 
+> 
+> **MOTORS CONNECTIONS**
+> - PB4 → Motor 1
+> - PB5 → Motor 2
+> - PB6 → Motor 3
+> - PB7 → Motor 4
+> 
+> **POWER CONNECTION**
+> - 5V → from ESC BEC
+> - AMS1117 → 3.3V rail
+> - VBAT → PA0
+> 
+> **USB-C INTERFACE**
+> - PA11
+> - PA12
+> 
+> **PROGRAMING / DEBUGGING**
+> 
+> Standard SWD header:
+> - SWCLK
+> - SWDIO
+> - NRST
+> - 3V3
+> - GND
+> 
+> **CLOCK SYSTEM**
+> 
+> - 25 MHz crystal oscillator.
+> 
+> **USB-C**
+> 
+> - PA11
+> - PA12
+> 
+> **PROGRAMMING**
+> 
+> SWD header:
+> - SWCLK
+> - SWDIO
+> - NRST
+> - 3V3
+> - GND
