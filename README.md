@@ -23,22 +23,28 @@ Genesis F7 is the first custom-built flight controller powered by the STM32F7 se
 ![Schematic_GenesisF7_2025-11-24](https://raw.githubusercontent.com/thagreatjoel/GenesisF7/refs/heads/main/docs/Schematic_GenesisF7_2025-11-24.jpg)
 ## 📐 Pinout Summary
 
-| Function | MCU Pin |
-|---------|---------|
-| IMU SCK | PA5 | 
-| IMU MISO | PA6 | 
-| IMU MOSI | PA7 |
-| IMU INT |     |
-| VBAT | PA0 | 
-| USB D– | PA11 | 
-| USB D+ | PA12 | 
-| Motor 1 | PB4 | 
-| Motor 2 | PB5 | 
-| Motor 3 | PB6 | 
-| Motor 4 | PB7 | 
-| SWCLK | PA14 |
-| SWDIO | PA13 |
-| NRST | NRST | 
-
+| Function        | STM32 Pin |
+|-----------------|-----------|
+| IMU SCK         | PA5       |
+| IMU MISO        | PA6       |
+| IMU MOSI        | PA7       |
+| IMU CS          | PA4       |
+| IMU INT         | PB0       |
+| VBAT            | PA0       |
+| USB D–          | PA11      |
+| USB D+          | PA12      |
+| ESC1            | PB4       |
+| ESC2            | PB5       |
+| ESC3            | PB6       |
+| ESC4            | PB7       |
+| Status LED      | PB3       |
+| LED 1           | PB8       |
+| LED 2           | PB9       |
+| SWCLK           | PA14      |
+| SWDIO           | PA13      |
+| NRST            | NRST      |
+| BOOT0           | BOOT0     |
+| Crystal IN      | PH0       |
+| Crystal OUT     | PH1       |
 ---
 
