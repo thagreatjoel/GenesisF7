@@ -1,67 +1,124 @@
-## GenesisF7 - FlightController
-Genesis F7 is the first custom build flight controller , code powered by STM32F7 series build from scratch. This board can provide 3.3v power supply. Usb c programming. This controler is mostly focus kn stabilty and performance in a compact PCB
+---
+
+## Genesis F7 – Flight Controller
+
+Genesis F7 is the first custom-built flight controller powered by the STM32F7 series, engineered entirely from the ground up. Designed with a focus on stability, performance, and reliability, it offers a compact yet powerful PCB layout—featuring USB-C programming, a robust 3.3V power system, and high-precision gyro sensing.
 
 
-## FEATURES 
+---
 
-STM32F722RET6 (Brain)
-ICM-42688-P IMU (Gyro)
-USB-C
-VBAT monitoring (PA0 ADC)
-4× Motor outputs (PB4–PB7)
-On-board LEDs
+## Features
+
+STM32F722RET6 microcontroller
+ICM-42688-P IMU (Gyro) via SPI1
+USB-C port for programming and communication
+VBAT monitoring through PA0 (ADC)
+
+- 4× Motor Outputs
+- PB4 → Motor 1
+- PB5 → Motor 2
+- PB6 → Motor 3
+- PB7 → Motor 4
+
+
+On-board status LEDs
 3.3V regulator (AMS1117)
-SWD programming
-25 MHz crystal clock
-Compact 2-layer design
+SWD programming header
+25 MHz crystal for main clock
+Compact 2-layer PCB design
 
 
-# Hardware Overview
 
-> **Microcontroller**
->
-> STM32F7
->
-> **IMU**
->
-> ICM-42688-P (SPI1)
->
-> INT pin connected for gyro signaling
->
->
-> **Motor Outputs**
->
-> PB4 -> Motor 1
->
-> PB5 -> Motor 2
->
-> PB6 -> Motor 3
->
-> PB7 -> Motor 4
-> (Each output drives an ESC signal pin.)
+---
 
 
-Power
-
-5V from ESC BEC → AMS1117 → 3.3V rail
-
-VBAT input divider → PA0 (battery monitoring)
 
 
-Clock
 
-25 MHz main crystal (PH0, PH1)
 
-Load capacitors placed close to the MCU
 
+## Hardware Overview
+
+
+
+MICROCONTROLLER
+
+STM32F7 series
+Primary clock: 25 MHz crystal connected on PH0 / PH1
+SWD available for debugging and firmware flashing
+
+
+
+---
+
+IMU
+
+ICM-42688-P
+INT pin routed to MCU for gyro interrupt signaling
+
+---
+
+MOTORS CONNECTIONS
+
+PB4 → Motor 1
+PB5 → Motor 2
+PB6 → Motor 3
+PB7 → Motor 4
+
+
+Each pin outputs a PWM signal to control ESCs.
+
+
+---
+
+POWER CONNECTION
+
+5V input from ESC BEC
+AMS1117 regulator → stable 3.3V rail
+VBAT voltage divider → PA0 for battery monitoring
+
+
+
+---
+
+USB-C INTERFACE 
+
+Connected to PA11 & PA12
+
+---
+
+PROGRAMING / DEBUGGING.
+
+Standard SWD header
+
+SWCLK
+SWDIO
+NRST
+3V3
+GND
+
+
+
+
+---
+
+CLOCK SYSTEM.
+
+25 MHz crystal oscillator
+
+Provides stable timing for all MCU..
+
+
+
+---
 
 USB-C
 
-Connected to PA11/PA12 (USB_FS)
+Connected to PA11/PA12
 
 CC resistors for proper detection
 
 
-Programming
+PROGRAMMING
 
 SWD header with SWCLK, SWDIO, NRST, 3V3, GND
