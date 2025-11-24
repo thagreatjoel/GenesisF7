@@ -4,7 +4,7 @@ Genesis F7 is the first custom-built flight controller powered by the STM32F7 se
 
 ---
 
-## ✨ Features
+## Features
 
 - **STM32F722RET6** microcontroller  
 - **ICM-42688-P** IMU via SPI1  
@@ -17,45 +17,9 @@ Genesis F7 is the first custom-built flight controller powered by the STM32F7 se
 - **25 MHz crystal oscillator**  
 - **2-layer PCB design**
 
----
 
-## 🧩 Hardware Overview
+## Schematics
 
-### **Microcontroller**
-- STM32F7 series  
-- 25 MHz crystal 
-- SWD for firmware flashing  
-
-### **IMU**
-- SPI1 
-- pin connected to MCU  
-
-### **Motor Outputs**
-- PB4 → Motor 1  
-- PB5 → Motor 2  
-- PB6 → Motor 3  
-- PB7 → Motor 4  
-
-### **Power System**
-- 5V input
-- AMS1117 → 3.3V 
-- VBAT → PA0 
-
-### **USB-C Interface**
-- PA11 (USB D–)  
-- PA12 (USB D+)  
-
-### **SWD Header**
-- SWCLK  
-- SWDIO  
-- NRST  
-- 3V3  
-- GND  
-
-### **Clock System**
-- 25 MHz crystal oscillator
-
----
 
 ## 📐 Pinout Summary
 
