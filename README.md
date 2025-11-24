@@ -14,11 +14,12 @@ Genesis F7 is the first custom-built flight controller powered by the STM32F7 se
 - USB-C port for programming and communication
 - VBAT monitoring through PA0 (ADC)
 
-  | 4× Motor Outputs|
-  | PB4 → Motor 1|
-  | PB5 → Motor 2|
-  | PB6 → Motor 3|
-  | PB7 → Motor 4|
+|----------------|
+| 4× Motor Outputs|
+| PB4 → Motor 1|
+| PB5 → Motor 2|
+| PB6 → Motor 3|
+| PB7 → Motor 4|
   
 - On-board status LEDs
 - 3.3V regulator (AMS1117)
