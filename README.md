@@ -5,7 +5,7 @@ Genesis F7 is the first custom-built flight controller powered by the STM32F7 se
 
 
 
-## Features
+## FEATURES
 
 - STM32F722RET6 microcontroller
 - ICM-42688-P IMU (Gyro) via SPI1
@@ -26,17 +26,17 @@ Genesis F7 is the first custom-built flight controller powered by the STM32F7 se
 
 
 **MICROCONTROLLER**
-STM32F7 series
-Primary clock: 25 MHz crystal connected on PH0 / PH1
-SWD available for debugging and firmware flashing
+- STM32F7 series
+- Primary clock: 25 MHz crystal connected on PH0 / PH1
+- SWD available for debugging and firmware flashing
 
 
 
 
 
 **IMU**
-ICM-42688-P
-INT pin routed to MCU for gyro interrupt signaling
+- ICM-42688-P
+- INT pin routed to MCU for gyro interrupt signaling
 
 
 
@@ -79,19 +79,11 @@ Standard SWD header
 
 **CLOCK SYSTEM**
 
-25 MHz crystal oscillator
-
-Provides stable timing for all MCU..
-
-
-
-
+- 25 MHz crystal oscillator.
 
 **USB-C**
 
-Connected to PA11/PA12
-
-CC resistors for proper detection
+- Connected to PA11/PA12
 
 
 
