@@ -20,8 +20,7 @@ Genesis F7 is the first custom-built flight controller powered by the STM32F7 se
 
 ## Schematics
 
-![Schematic_GenesisF7_2025-11-24](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTM4OTIsInB1ciI6ImJsb2JfaWQifX0=--2c66835ff4a5d613e8fea01e9c10180cfe300202/Schematic_GenesisF7_2025-11-24.jpg)
-
+![Schematic_GenesisF7_2025-11-24](https://raw.githubusercontent.com/thagreatjoel/GenesisF7/refs/heads/main/docs/Schematic_GenesisF7_2025-11-24.jpg)
 ## 📐 Pinout Summary
 
 | Function | MCU Pin |
